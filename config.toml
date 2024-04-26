@@ -1,0 +1,12 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+color-modes = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"

@@ -1,0 +1,20 @@
+[[language]]
+name = "vue"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
+language-servers = ["typescript-language-server", "emmet-lsp"] # Emmet en snippet completion for the last 2
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/home/gandalf/.nvm/versions/node/v18.12.1/lib/node_modules/@vue/typescript-plugin"
+languages = ["vue"]
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+language-servers = ["typescript-language-server"]
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
